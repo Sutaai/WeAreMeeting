@@ -10,7 +10,7 @@ FROM base AS build
 COPY pnpm-lock.yaml /app
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm fetch
 COPY package.json /app
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --prod --offline
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --offline
 
 COPY . /app
 RUN pnpm run build
