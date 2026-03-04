@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  key: "anniversaries",
+})
+
 import Timeline from 'primevue/timeline';
 import { formatTimeAgo, formatDate } from '@vueuse/core';
 

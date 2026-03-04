@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  key: "index",
+})
+
 const meetingAtTs = useRuntimeConfig().public.meetingIn
 
 const now = new Date()

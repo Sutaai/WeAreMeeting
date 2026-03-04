@@ -5,11 +5,11 @@ import type { MenuItem } from 'primevue/menuitem';
 const menuItems: MenuItem[] = [
   {
     label: "Anniversaries",
-    url: "/anniversaries"
+    url: useRouter().resolve({ path: "/anniversaries" }).href
   },
   {
     label: "Meeting Counter",
-    url: "/"
+    url: useRouter().resolve({ path: "/" }).href
   }
 ]
 </script>
