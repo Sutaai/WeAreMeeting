@@ -21,6 +21,11 @@ const anniversaries = [
     date: new Date(2026, 2, 7, 18, 0, 0),
     text: "Meeting again??",
     desc: "On March 7, 2026, Anna came to see Alfie & Chara at their house. Bet she'll be stunned!"
+  },
+  {
+    date: new Date(2026, 2, 18),
+    text: "First date!",
+    desc: "On March 18, 2026, Chara is getting her operation. We wish you luck and a good recovery, babe!"
   }
 ];
 </script>
