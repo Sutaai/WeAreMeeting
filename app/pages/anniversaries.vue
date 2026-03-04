@@ -24,7 +24,7 @@ const anniversaries = [
   },
   {
     date: new Date(2026, 2, 18),
-    text: "First date!",
+    text: "Challenge of a life - Chara edition",
     desc: "On March 18, 2026, Chara is getting her operation. We wish you luck and a good recovery, babe!"
   }
 ];
