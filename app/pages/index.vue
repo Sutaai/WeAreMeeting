@@ -17,7 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div h="screen" flex="~ col content-between" justify="evenly" text="center 5xl lg:8xl">
+  <div  flex="~ 1 col lg:content-between" justify-evenly text="center 5xl lg:8xl">
     <p>Our next meeting is:</p>
     <p font-mono>{{ meetingAt.toLocaleString() }}</p>
     <div>

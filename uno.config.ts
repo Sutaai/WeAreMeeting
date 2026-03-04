@@ -15,9 +15,18 @@ export default defineConfig({
           provider: 'fontshare'
         }],
         sans: [{
+          name: 'Satoshi',
+          weights: ['400'],
+          provider: 'fontshare'
+        }],
+        style: [{
           name: 'Stardom',
           provider: 'fontshare'
-        }]
+        }],
+        style1: [{
+          name: 'Bonny',
+          provider: 'fontshare'
+        }],
       }
     }),
     presetAttributify()

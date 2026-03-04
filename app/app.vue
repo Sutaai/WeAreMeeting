@@ -3,8 +3,10 @@ const t = useRuntimeConfig().public.meetingIn
 </script>
 
 <template>
-  <div>
+  <div min-h-dvh>
     <Confused v-if="!t" />
-    <NuxtPage v-else />
+    <NuxtLayout v-else>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
