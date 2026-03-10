@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Finished from '~/components/Finished.vue'
+
 definePageMeta({
   key: "index",
 })
@@ -21,15 +23,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <div  flex="~ 1 col lg:content-between" justify-evenly text="center 5xl lg:8xl">
+  <div v-if="shouldShowTimer" flex="~ 1 col lg:content-between" justify-evenly text="center 5xl lg:8xl">
     <p>Our next meeting is:</p>
     <p font-mono>{{ meetingAt.toLocaleString() }}</p>
     <div>
       <p>Which is</p>
-      <Timer v-if="shouldShowTimer" :meetingAt="meetingAt" />
+      <Timer :meetingAt="meetingAt" />
       <span id="clicking-dot" font-mono :hidden="hideDot">.</span>
     </div>
 
     <p text="xl lg:4xl">Thanks for waiting!</p>
+  </div>
+  <div v-else>
+    <Finished />
   </div>
 </template>

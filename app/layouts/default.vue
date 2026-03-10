@@ -16,10 +16,9 @@ const menuItems: MenuItem[] = [
 
 <template>
   <nav>
-    <Menubar :model="menuItems" >
-    </Menubar>
+    <Menubar :model="menuItems" />
   </nav>
-  <main m-8>
+  <main p-8>
     <slot />
   </main>
 </template>
